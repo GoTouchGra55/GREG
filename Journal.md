@@ -17,3 +17,13 @@ Today was spent on more wiring. But I wired up the power management ic (PMIC) to
 Then I wired the PMIC according to the datasheet application. Its still a bit confusing but I think chatgpt or claude and elaborate it for me, if I'm unable to comprehend the datasheet contents. I also wired up power for the processor. It had a lot of different voltage requirements but i guess that's what the PMIC is supposed to be used for instead a billion different voltage regulators.
 
 https://lapse.hackclub.com/timelapse/Uc_4LHCtApbX
+
+# Day 3
+
+Today I added wired connectivity to the board. I added stuff like 1 ethernet, 2 usb-a ports, 1 usb-c port, 2 camera connectors, 1 debug terminal, and 1 hdmi output port. The one that was the most confusing here are the camera connectors. We originally planned for 2 cameras (3 now) and I thought that there were enough pins on the cpu for it, but even using the MIPI DSI from the datasheet, there aren't enough pins for 2 cams. So, I'll need to figure something else out tomorrow for 3 cams.
+
+I literally had to change the camera connector pinout 3 times bc for the first time, I thought we were going for a raspberry pi style camera so I copied that pinout. That was wrong. We changed the camera and I didn't look for the specifics of the camera we'd use. So, I thought copying a standard MIPI camera pinout was a good idea. Not a good idea again. The camera my teammate chose was the most niche camera I've ever seen. Then, I copied the final pinout for that specific camera.
+
+Finally, I also added the micro-sd card memory section. Idk why but I went with stacked USB-A ports like a raspberry pi. Probably because it saves space. I forgot what I was thinking then.
+
+https://lapse.hackclub.com/timelapse/OWU4e0SMXuE3
