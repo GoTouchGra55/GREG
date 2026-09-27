@@ -32,8 +32,22 @@ https://lapse.hackclub.com/timelapse/OWU4e0SMXuE3
 
 Today I cleaned up the camera config. Yesterday, I had cheated a bit by only making one camera functional and the other pretty much disabled. So, I added a multiplexer so that I could switch electronically between the two cameras. This was very simple to add as all the pins were pretty much self-explanatory on the MUX.
 
-Then, I added the connectors for all extra devices to be used with the rover. I added connectors for a LiDAR, a 5" LCD display, 6x ToF sensors, and a breakout. For the 5" lcd, I had to use a separate regulator for the backlights and I also had to use another multiplexer for the ToF sensors as using up that many I2C pins would be painful to route and redundant. After that, I cleaned everything up and fixed any erros that I had made. 
+Then, I added the connectors for all extra devices to be used with the rover. I added connectors for a LiDAR, a 5" LCD display, 6x ToF sensors, and a breakout. For the 5" lcd, I had to use a separate regulator for the backlights and I also had to use another multiplexer for the ToF sensors as using up that many I2C pins would be painful to route and redundant. After that, I cleaned everything up and fixed any erros that I had made.
 
 Finally, I've finished the schemati- SHIT. I forgot the motor driver section. Tomorrow, I'll work on the motor drivers then.
 
 https://lapse.hackclub.com/timelapse/n_8mE_Owrke_
+
+# Day 5
+
+Today, I've planned to make the schematic for the motor driver. Hopefully this doesn't take too long. So, I started off with cubemx. I had to use an stm32g4 series mcu because, I really didn't want this driver to be on the SBC. That would make the sbc way too cluttered and also noisy. So, I setup some pins and timers in cubemx. It was around this time that something crashed on the system and the recording was stopped. So, I just have a random 10min lapse.
+
+https://lapse.hackclub.com/timelapse/YH5z8TwuD9Iz
+
+Then, I opened up kicad and set up the mcu with decoupling capacitors, reset circuitry, crystal, etc. After that, I added a drv8262 motor driver. I used this because it supported two motors instead of just one. That would mean I'd have to use only 3 of these for the 6 planned motors. The first symbol I imported for the driver was very confusing to me, so i replaced it with a "better" version.
+
+Even after that, it took me a lot of time to figure out the pinouts. The board had multiple pins with the same name. I figured out that it was to accomodate for the huge current requirements for the motors. Also, the driver had a different pinout for single and dual motor modes. I had added some incorrect configs in cubemx, so retraced my steps and reconfigured the project. Next, it was pretty much smooth sailing. I added the power circuitry from an old project as it had a pretty similar power i/o requirement. I eventually added the CAN to both the stm32 and the t527.
+
+Then, I changed the 2x18 pin connector to a 2x19 pin version to include the two CAN pins. Finally, I assigned the footprints to both the driver and the driver. I realized that a couple of the footprints were missing models, so i manually assigned models to those. With that, I concluded the schematics for the SBC + Motor Driver. I'll be routing the pcbs in the following week!
+
+https://lapse.hackclub.com/timelapse/VLZOeNz0L1pe
