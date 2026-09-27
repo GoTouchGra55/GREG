@@ -27,3 +27,13 @@ I literally had to change the camera connector pinout 3 times bc for the first t
 Finally, I also added the micro-sd card memory section. Idk why but I went with stacked USB-A ports like a raspberry pi. Probably because it saves space. I forgot what I was thinking then.
 
 https://lapse.hackclub.com/timelapse/OWU4e0SMXuE3
+
+# Day 4
+
+Today I cleaned up the camera config. Yesterday, I had cheated a bit by only making one camera functional and the other pretty much disabled. So, I added a multiplexer so that I could switch electronically between the two cameras. This was very simple to add as all the pins were pretty much self-explanatory on the MUX.
+
+Then, I added the connectors for all extra devices to be used with the rover. I added connectors for a LiDAR, a 5" LCD display, 6x ToF sensors, and a breakout. For the 5" lcd, I had to use a separate regulator for the backlights and I also had to use another multiplexer for the ToF sensors as using up that many I2C pins would be painful to route and redundant. After that, I cleaned everything up and fixed any erros that I had made. 
+
+Finally, I've finished the schemati- SHIT. I forgot the motor driver section. Tomorrow, I'll work on the motor drivers then.
+
+https://lapse.hackclub.com/timelapse/n_8mE_Owrke_
