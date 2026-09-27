@@ -1,0 +1,224 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "25f2f004-0aac-41a6-aa3a-4860bce9ba89")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 39.37 97.79)
+		(size 102.87 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "331f23a5-2358-4485-a855-0a9bde6dfbde")
+		(property "Sheetname" "Sensors"
+			(at 39.37 97.0784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensors.kicad_sch"
+			(at 39.37 137.7446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GREG"
+				(path "/25f2f004-0aac-41a6-aa3a-4860bce9ba89"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 97.79)
+		(size 90.17 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "63d76d56-9cec-451a-9591-96df5461a8de")
+		(property "Sheetname" "Connectivity"
+			(at 154.94 97.0784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connectivity.kicad_sch"
+			(at 154.94 137.7446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GREG"
+				(path "/25f2f004-0aac-41a6-aa3a-4860bce9ba89"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 118.11 38.1)
+		(size 58.42 43.18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9734a47e-462d-48ac-ae6c-eb9463e08290")
+		(property "Sheetname" "Memory"
+			(at 118.11 37.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Memory.kicad_sch"
+			(at 118.11 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GREG"
+				(path "/25f2f004-0aac-41a6-aa3a-4860bce9ba89"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 39.37 38.1)
+		(size 63.5 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b36abcf1-b204-4e90-b364-88fd4019ff84")
+		(property "Sheetname" "CPU"
+			(at 39.37 37.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CPU.kicad_sch"
+			(at 39.37 83.1346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GREG"
+				(path "/25f2f004-0aac-41a6-aa3a-4860bce9ba89"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 189.23 38.1)
+		(size 55.88 43.18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d0e7b021-060b-4e8f-b7c0-4a07f7ac6e23")
+		(property "Sheetname" "Power"
+			(at 189.23 37.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 189.23 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GREG"
+				(path "/25f2f004-0aac-41a6-aa3a-4860bce9ba89"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
