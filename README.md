@@ -2,6 +2,8 @@
 
 GREG is a custom SBC designed to act as the main computer for a rover. It is built around the Allwinner T527 SoC and includes custom memory, power management, connectivity, camera, display, sensor, and motor-control hardware.
 
+CAD REPO - [REPO](https://github.com/unknowngamer69/Orion-Rover)
+
 ## Hardware
 
 - SoC: Allwinner T527
