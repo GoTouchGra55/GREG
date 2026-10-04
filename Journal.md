@@ -70,7 +70,7 @@ https://lapse.hackclub.com/timelapse/TpOebbLc9Wzu
 
 # Day 3
 
-Today, I connected the motor drivers to the mcu itself. Previously, it was only routed locally. After that, I cleaned up some of the older routes. I also figured out that I had accidentally mixed up the internal power supply to the external through a silly error. So, I fixed that and also fixed the corresponding routes. 
+Today, I connected the motor drivers to the mcu itself. Previously, it was only routed locally. After that, I cleaned up some of the older routes. I also figured out that I had accidentally mixed up the internal power supply to the external through a silly error. So, I fixed that and also fixed the corresponding routes.
 
 https://lapse.hackclub.com/timelapse/athXvKkx-Ld6
 
@@ -85,3 +85,9 @@ https://lapse.hackclub.com/timelapse/TlkEq0aHov0p
 Today, I started work on routing the sbc itself. This was very confusing as I've never worked with an sbc before. I tried to use vias but they didnt really want to work. So, I found out that I was supposed to use micro vias. I also tried to connect long distance traces together but later changed my mind as I don't think that it's a good idea. I'd rather keep the traces short and tidy instead of long and weird. Then, I followed a similar concept in the ram. I only routed together the grouped components. Gonna do more work tomorrow.
 
 https://lapse.hackclub.com/timelapse/h11k2Ic1V0Ab
+
+# Day 6
+
+Today, I wired up some local routes in the sbc. I wanted to start with the RAM but as a beginner to custom sbc designs, shits pretty intimidating yk. So, I routed the ethernet section first. Then, I routed up some crystals and finally the SD card memory section. I wanted to keep the labels at first so I spent some time "prettyfying" the component placements, but then later changed my mind as it took too fricking long to do and imo just looked trash.
+
+https://lapse.hackclub.com/timelapse/Ca1tS8nBZieB

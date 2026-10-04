@@ -35,7 +35,14 @@ Motor Driver - [SEE SCHEMATICS](<Schematics(PDF)/GREG-MTRDRV.pdf>)
 
 ## Routing
 
-(To be done in the upcoming week!)
+### Motor Driver
+
+![Driver Routes](Assets/MTR_DRV_ROUTES.png)
+![Driver](Assets/MTR_DRV.png)
+
+### SBC (incomplete)
+
+![GREG SBC](Assets/GREG_ROUTES.png)
 
 ## Authors
 
